@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>AluraDEV</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/reset.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+           
+            <div><img src="./image/logo-plataforma.png" class="logo-plataforma"></div>
+            <div><input class="input-pesquisa" placeholder="Busque por algo"></div>
+            <div><img src="./image/foto-perfil.png" class="foto-perfil"></div>
+
+            
+        </div>
+
+        <div class="container-principal">
+
+            <div class="menu-navegacao">
+                <div><span class="titulo-menu">MENU</span></div>
+
+                <ul class="lista-menu">
+                    <li>
+                        <a href="index.html" style="text-decoration: none;"><div class="div-botaoEditor">
+                            <div><button class="botao-editor"><img src="./image/icon.png" class="icon"></button></div>
+                            <div><span class="texto-botaoEditor">Editor de código</span></div>
+                        </div></a>
+
+                    </li>
+                    <li>
+                        <a href="index.html" style="text-decoration: none;"><div class="div-botaoEditor">
+                            <div><button class="botao-comunidade"><i class="fas fa-users faicon-comunidade"></i></button></div>
+                            <div><span class="texto-botaoComunidade">Comunidade</span></div>
+                        </div></a>
+
+                    </li>         
+
+                </ul>
+            </div>
+
+            <div class="div-corpo-principal">
+                <div class="corpo">
+                    <div class="editor">
+                        <button class="botao-vermelho"></button>
+                        <button class="botao-amarelo"></button>
+                        <button class="botao-verde"></button>
+                        <textarea>
+                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                            const unfold = (f, seed) => {
+                            const go = (f, seed, acc) => {
+                                const res = f(seed)
+                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                            }
+
+                        </textarea>
+                    </div> 
+                </div>
+                <div class="div-botaoHighlight">
+                    <button class="botao-highlight">Visualizar com highlight</button>
+                </div>
+            </div>
+            
+
+
+            <div class="menu-lateral-direita">
+                <div><span class="titulo-menu">SEU PROJETO</span></div>
+
+                <div class="div-inputNomeProjeto">
+                    <input placeholder="Nome do seu projeto" class="input-nomeProjeto">
+                </div>
+
+                <div class="div-inputDescricaoProjeto">
+                    <input placeholder="Descriçao do seu projeto" class="input-descricaoProjeto">
+                </div>
+
+                <div class="div-tituloPersonalizacao"><span class="titulo-menu">PERSONALIZAÇÃO</span></div>
+
+                <div class="div-inputDescricaoProjeto">
+                    <select class="selectLinguagem">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+
+                <div class="div-inputDescricaoProjeto">
+                    <input class="selectCor" type="color" id="cores" name="ArcoIris" list="arcoIris" value="#6BD1FF">
+
+                    <datalist id="arcoIris">
+                        <option value="#6BD1FF">Azul Claro</option>
+                        <option value="#FFA500">Laranja</option>
+                        <option value="#FFFF00">Amarelo</option>
+                        <option value="#008000">Verde</option>
+                        <option value="#0000FF">Azul</option>
+                        <option value="#4B0082">Indigo</option>
+                        <option value="#EE82EE">Violeta</option>
+                    </datalist>
+                </div>
+
+                <div class="div-botaoSalvar"><button class="botao-salvar">Salvar projeto</button></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
